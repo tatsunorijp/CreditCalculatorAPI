@@ -8,7 +8,7 @@ public class CalculatorController {
 
     public static double calculateCreditLimit(CreditLimitModel creditLimit) {
         // Load from 'FCL' file
-        String fileName = "/Users/tatsunori/Downloads/creditCalculator/src/main/java/com/CreditCalculator/models/fuzzy.fcl";
+        String fileName = "src/main/java/com/CreditCalculator/models/fuzzy.fcl";
         FIS fis = FIS.load(fileName,true);
 
         if( fis == null ) {
