@@ -18,15 +18,6 @@ public class CreditCalculatorResource {
     @GetMapping("/test")
     public String test() {
         return "test OK";
-//        return Double.toString(CalculatorController.calculateCreditLimit(
-//                new CreditLimitModel(
-//                        "15000",
-//                        "5000",
-//                        "6",
-//                        "400000",
-//                        "850"
-//                )
-//        ));
     }
 
     @ApiOperation(value="Solicita os parametros e retorna o limite calculado")
