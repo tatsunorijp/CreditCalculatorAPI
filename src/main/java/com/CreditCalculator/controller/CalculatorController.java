@@ -16,9 +16,6 @@ public class CalculatorController {
             return 0;
         }
 
-        // Show
-//        JFuzzyChart.get().chart(fis.getFunctionBlock("tipper"));
-
         // Set inputs
         fis.setVariable("salary", Double.parseDouble(creditLimit.getSalary()));
         fis.setVariable("variableSalary", Double.parseDouble(creditLimit.getVariableSalary()));
@@ -30,11 +27,13 @@ public class CalculatorController {
 
         // Show output variable's chart
         Variable salaryValue = fis.getFunctionBlock("tipper").getVariable("creditValue");
-//        JFuzzyChart.get().chart(salaryValue, salaryValue.getDefuzzifier(), true);
 
-        // Print ruleSet
-//        System.out.println(fis);
+        Double creditValue = salaryValue.getLatestDefuzzifiedValue();
 
-        return salaryValue.getLatestDefuzzifiedValue();
+        if (creditValue < 600) {
+            return 0;
+        } else {
+            return creditValue;
+        }
     }
 }
