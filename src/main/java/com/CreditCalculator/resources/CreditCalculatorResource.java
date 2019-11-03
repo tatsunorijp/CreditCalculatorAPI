@@ -22,8 +22,9 @@ public class CreditCalculatorResource {
 
     @ApiOperation(value="Solicita os parametros e retorna o limite calculado")
     @PostMapping("/creditLimit")
-    public String salvaProduto(@RequestBody @Valid CreditLimitModel creditLimit) {
-        return Double.toString(CalculatorController.calculateCreditLimit(creditLimit));
+    public String creditLimit(@RequestBody @Valid CreditLimitModel creditLimit) {
+        return "1200";
+//        return Double.toString(CalculatorController.calculateCreditLimit(creditLimit));
     }
 
 }
