@@ -1,10 +1,8 @@
 package com.CreditCalculator.controller;
 
 import com.CreditCalculator.models.CreditLimitModel;
-
 import net.sourceforge.jFuzzyLogic.FIS;
 import net.sourceforge.jFuzzyLogic.rule.Variable;
-
 
 public class CalculatorController {
 

@@ -19,6 +19,13 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>myJar</groupId>
+			<artifactId>jfuzzylogic</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/jFuzzyLogic.jar</systemPath>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
