@@ -20,8 +20,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>myJar</groupId>
-			<artifactId>jfuzzylogic</artifactId>
+			<groupId>jFuzzyLogicJar</groupId>
+			<artifactId>jFuzzyLogic</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/jFuzzyLogic.jar</systemPath>
